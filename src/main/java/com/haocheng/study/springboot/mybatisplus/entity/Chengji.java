@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author haocheng
- * @since 2019-12-13
+ * @since 2019-12-15
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -20,11 +20,19 @@ public class Chengji implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    private Integer id;
+
     private String name;
 
     private String sub;
 
     private String grade;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

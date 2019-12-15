@@ -7,6 +7,11 @@ spring:
     username: root
     password: 123456
 
+
 mybatis-plus:
   config-location:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #¥Ú”°sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #ÊâìÂç∞sql
+
+logging:
+  level:
+    com.haocheng.study.springboot.mybatisplus: debug
